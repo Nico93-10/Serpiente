@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #222;
+    color: fuchsia;
+}
+
+/* Contenedor del juego */
+.game-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Tablero */
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
+/* Cuadrados */
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+}
+
+/* Estilo de la serpiente */
+.snakeSquare {
+    background-color: fuchsia;
+    border-radius: 5px;
+}
+
+/* Estilo de la comida */
+.foodSquare {
+    background-color: turquoise;
+    border-radius: 50%;
+}
+
+/* Puntuación */
+.info {
+    margin-top: 10px;
+}
+
+/* Botón de inicio */
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: fuchsia;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: turquoise;
+    cursor: not-allowed;
+}
+
+/* Mensaje de Game Over */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
